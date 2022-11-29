@@ -1,0 +1,58 @@
+
+1- Acessar o JSON Server
+https://www.npmjs.com/package/json-server
+
+
+
+2- Criar a Pasta: Server
+
+
+
+3- No terminal executar o comando para instalar o Servidor:  
+- npm install -g json-server
+
+
+
+
+4- Criar um arquivo na Pasta Server Teste: db.json
+- Dentro do banco, criar 3 rotas: quartos, funcionários e clientes
+
+
+
+5- No terminal executar o comando para start do banco de dados: 
+
+npx json-server --watch db.json
+
+
+6- Criar um arquivo: server.js
+- Inserir o js da documentação no server.js:
+
+// server.js
+const jsonServer = require('json-server')
+const server = jsonServer.create()
+const router = jsonServer.router('db.json')
+const middlewares = jsonServer.defaults()
+
+server.use(middlewares)
+server.use(router)
+server.listen(3000, () => {
+  console.log('JSON Server is running')
+})
+
+
+
+7 - No Terminal, inserir o comando da documentação para executar o JS acima:
+npm install json-server --save-dev //Instalação do servidor local
+
+
+8 - Executar o comando para execução do node:
+node server.js
+
+
+
+
+
+
+
+Material de apoio:
+https://blog.betrybe.com/json-server/

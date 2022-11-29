@@ -1,0 +1,24 @@
+{
+  "name": "projeto-rest-api",
+  "version": "1.0.0",
+  "description": "Rest-Api com temática de Restaurante",
+  "main": "server.js",
+  "devDependencies": {
+    "json-server": "^0.17.1"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/joseegabriel/Projeto-Json-Server.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/joseegabriel/Projeto-Json-Server/issues"
+  },
+  "homepage": "https://github.com/joseegabriel/Projeto-Json-Server#readme"
+}
